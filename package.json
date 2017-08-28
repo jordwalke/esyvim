@@ -1,0 +1,42 @@
+{
+  "name": "vim",
+  "version": "8.0.1002",
+  "description": "Vim",
+  "main": "index.js",
+  "esy": {
+    "buildsInSource": true,
+    "build": [
+      "cd src/",
+      "./configure --with-vim-name=esyvim --with-ex-name=esyex --with-view-name=esyview -prefix=$cur__install -exec-prefix=$cur__install --with-features=huge --enable-multibyte --enable-rubyinterp=yes --enable-pythoninterp=yes --with-python-config-dir=/usr/lib/python2.7/config --enable-python3interp=yes --with-python3-config-dir=/usr/lib/python3.5/config --enable-perlinterp=yes --enable-luainterp=yes --enable-cscope",
+      "make install"
+    ]
+  },
+  "releasedBinaries": [
+    "esyvim",
+    "resyvim",
+    "esyview",
+    "eesyview",
+    "resyview",
+    "esyvimdiff"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vim/vim.git"
+  },
+  "keywords": [
+    "vim",
+    "vim8",
+    "VimScript",
+    "esy"
+  ],
+  "author": "",
+  "license": "Vim",
+  "bugs": {
+    "url": "https://github.com/jordwalke/esyvim/issues"
+  },
+  "homepage": "https://github.com/vim/vim#readme"
+}
+
