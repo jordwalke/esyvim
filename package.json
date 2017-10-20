@@ -1,5 +1,5 @@
 {
-  "name": "vim",
+  "name": "esyvim",
   "version": "8.0.1002",
   "description": "Vim",
   "main": "index.js",
