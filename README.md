@@ -6,9 +6,10 @@
 ###### Creating an `npm` installable Release:
 
 ```sh
-npm install esy
+npm install -g esy
 git clone git@github.com:jordwalke/esyvim-cli.git
 cd esyvim-cli
+git checkout -b esy origin/esy
 esy release
 ```
 
