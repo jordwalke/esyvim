@@ -1,3 +1,31 @@
+#`esyvim-cli`: Easy `npm` installation of Vim8.
+
+
+### Developing:
+
+###### Creating an `npm` installable Release:
+
+```sh
+npm install esy
+git clone git@github.com:jordwalke/esyvim-cli.git
+cd esyvim-cli
+esy release
+```
+
+Your release will then be located at `_release/bin-darwin/` or equivalent for
+your operating system. You can push it to wherever you like, or install it with
+the `npm install -g /path/to/that/directory` command.
+
+###### Uninstalling:
+
+```sh
+npm uninstall -g esyvim-cli
+```
+
+
+
+#Original Vim README:
+
 `README.md` for version 8.0 of Vim: Vi IMproved.
 [![Build Status](https://travis-ci.org/vim/vim.svg?branch=master)](https://travis-ci.org/vim/vim)
 [![Coverage Status](https://codecov.io/gh/vim/vim/coverage.svg?branch=master)](https://codecov.io/gh/vim/vim?branch=master)
