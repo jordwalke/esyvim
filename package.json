@@ -9,22 +9,27 @@
       "cd src/",
       "./configure --with-vim-name=esyvim --with-ex-name=esyex --with-view-name=esyview -prefix=$cur__install -exec-prefix=$cur__install --with-features=huge --enable-multibyte --enable-rubyinterp=yes --enable-pythoninterp=yes --with-python-config-dir=/usr/lib/python2.7/config --enable-python3interp=yes --with-python3-config-dir=/usr/lib/python3.5/config --enable-perlinterp=yes --enable-luainterp=yes --enable-cscope",
       "make install"
-    ]
+    ],
+    "release": {
+      "releasedBinaries": [
+        "esyvim",
+        "resyvim",
+        "esyview",
+        "eesyview",
+        "resyview",
+        "esyvimdiff"
+      ]
+    }
   },
-  "releasedBinaries": [
-    "esyvim",
-    "resyvim",
-    "esyview",
-    "eesyview",
-    "resyview",
-    "esyvimdiff"
-  ],
+  "devDependencies": {
+    "esy" : "0.0.13"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vim/vim.git"
+    "url": "git+https://github.com/jordwalke/esyvim.git"
   },
   "keywords": [
     "vim",
